@@ -1,0 +1,13 @@
+{
+  "emojiLauncher": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": ":"
+  },
+  "dankBatteryAlerts": {
+    "enabled": true,
+    "criticalTitle": "PIL BITIYO ALOOO",
+    "criticalMessage": "Battery at ${level}% - hemen sarja takkk!!!!!!!",
+    "warningMessage": "Battery at ${level}% - sajr kalbosu."
+  }
+}

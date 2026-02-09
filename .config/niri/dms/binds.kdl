@@ -1,0 +1,13 @@
+binds {
+    Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
+    Mod+D hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+F9 hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Mod+M hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
+    Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    XF86AudioLowerVolume hotkey-overlay-title="Volume Down (10%)" { spawn "dms" "ipc" "call" "audio" "decrement" "10"; }
+    XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
+    XF86AudioRaiseVolume hotkey-overlay-title="Volume Up (10%)" { spawn "dms" "ipc" "call" "audio" "increment" "10"; }
+    XF86MonBrightnessDown hotkey-overlay-title="Brightness Down (10%)" { spawn "dms" "ipc" "call" "brightness" "decrement" "10" ""; }
+    XF86MonBrightnessUp hotkey-overlay-title="Brightness Up (10%)" { spawn "dms" "ipc" "call" "brightness" "increment" "10" ""; }
+}
