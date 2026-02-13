@@ -9,14 +9,14 @@
       "accent": "mauve"
     }
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-vibrant",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
-  "cornerRadius": 7,
+  "cornerRadius": 6,
   "niriLayoutGapsOverride": -1,
   "niriLayoutRadiusOverride": 4,
   "niriLayoutBorderSize": 2,

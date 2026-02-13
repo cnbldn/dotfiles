@@ -10,6 +10,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+-- delete default vim.lsp keybinds
+-- these conflict with "gr", and are just way too long for no reason
+vim.keymap.del("n", "grr")
+vim.keymap.del("n", "grn")
+vim.keymap.del("n", "gra")
+vim.keymap.del("x", "gra")
+vim.keymap.del("n", "gri")
+vim.keymap.del("n", "grt")
 -- lsp
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
