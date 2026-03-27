@@ -5,6 +5,7 @@ binds {
     Mod+M hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Super+P hotkey-overlay-title="Notepad: Toggle" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
     XF86AudioLowerVolume hotkey-overlay-title="Volume Down (10%)" { spawn "dms" "ipc" "call" "audio" "decrement" "10"; }
     XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
     XF86AudioRaiseVolume hotkey-overlay-title="Volume Up (10%)" { spawn "dms" "ipc" "call" "audio" "increment" "10"; }

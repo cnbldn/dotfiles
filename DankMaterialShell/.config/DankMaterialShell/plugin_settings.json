@@ -9,5 +9,12 @@
     "criticalTitle": "PIL BITIYO ALOOO",
     "criticalMessage": "Battery at ${level}% - hemen sarja takkk!!!!!!!",
     "warningMessage": "Battery at ${level}% - sajr kalbosu."
+  },
+  "displayMirror": {
+    "enabled": true
+  },
+  "calculator": {
+    "enabled": false,
+    "trigger": "="
   }
 }

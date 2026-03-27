@@ -1,6 +1,8 @@
 -- Clear highlights on search
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+vim.keymap.set("n", "<leader>m", "<cmd>make<CR>", { desc = "make" })
+
 -- Highlight text on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",

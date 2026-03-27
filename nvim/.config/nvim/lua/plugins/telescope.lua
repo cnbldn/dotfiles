@@ -17,7 +17,7 @@ return {
         builtin.find_files({ cwd = vim.fn.stdpath("config") })
       end, { desc = "Find in Neovim Config" })
       vim.keymap.set("n", "<leader>fcc", function()
-        builtin.find_files({ cwd = "/home/cnbldn/.config" })
+        builtin.find_files({ cwd = "/home/cnbldn/.config", follow = true })
       end, { desc = "Find in .config Config" })
 
       vim.keymap.set("n", "<leader>f.", builtin.oldfiles, { desc = "oldfiles" })
