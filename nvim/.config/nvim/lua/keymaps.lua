@@ -3,6 +3,9 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.keymap.set("n", "<leader>m", "<cmd>make<CR>", { desc = "make" })
 
+-- Formatting
+vim.keymap.set("n", "<leader>p", "<cmd>Format<CR>", { desc = "Format"})
+
 -- Highlight text on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
