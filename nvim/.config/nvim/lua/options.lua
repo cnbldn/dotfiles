@@ -34,3 +34,32 @@ vim.schedule(function()
 end)
 
 vim.opt.termguicolors = true
+
+vim.diagnostic.config({
+  -- virtual_lines = true, -- this gets messy on large code base with tons of errors
+  -- Select either virtual lines or text below otherwise it gets messy
+  virtual_text = {
+    spacing = 4,
+    prefix = "●", -- This is fine as a string
+  },
+
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+  float = {
+    border = "rounded",
+    source = true,
+  },
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = "󰅚 ",
+      [vim.diagnostic.severity.WARN] = "󰀪 ",
+      [vim.diagnostic.severity.INFO] = "󰋽 ",
+      [vim.diagnostic.severity.HINT] = "󰌶 ",
+    },
+    numhl = {
+      [vim.diagnostic.severity.ERROR] = "ErrorMsg",
+      [vim.diagnostic.severity.WARN] = "WarningMsg",
+    },
+  },
+})

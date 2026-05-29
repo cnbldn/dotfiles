@@ -4,7 +4,11 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>m", "<cmd>make<CR>", { desc = "make" })
 
 -- Formatting
-vim.keymap.set("n", "<leader>p", "<cmd>Format<CR>", { desc = "Format"})
+vim.keymap.set("n", "<leader>p", "<cmd>Format<CR><cmd>GuessIndent<CR>", { desc = "Format"})
+
+-- Todo
+vim.keymap.set("n", "<leader>tt", "<cmd>TodoTelescope<CR>", { desc = "TODO: Telescope"})
+vim.keymap.set("n", "<leader>tq", "<cmd>TodoQuickFix<CR>", { desc = "TODO: QuickFix"})
 
 -- Highlight text on yank
 vim.api.nvim_create_autocmd("TextYankPost", {

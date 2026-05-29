@@ -91,3 +91,6 @@ function y() {
 # aliases
 alias mux="tmuxinator"
 eval "$(uv generate-shell-completion zsh)"
+
+# opencode
+export PATH=/home/cnbldn/.opencode/bin:$PATH

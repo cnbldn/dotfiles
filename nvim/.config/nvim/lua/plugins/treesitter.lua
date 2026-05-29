@@ -3,7 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     branch = "master",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter-context",
+      -- "nvim-treesitter/nvim-treesitter-context",
     },
     lazy = false,
     build = ":TSUpdate",
