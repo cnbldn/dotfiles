@@ -5,9 +5,9 @@ import = ["dank-theme.toml"]
 opacity = 0.9
 
 [font]
-size = 13
+size = 11
 
 [font.normal]
-family = "MesloLGS NF"
-# family = "JetBrainsMono NF"
+# family = "MesloLGS NF"
+family = "JetBrainsMono NF"
 

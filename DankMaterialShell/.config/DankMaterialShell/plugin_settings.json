@@ -16,5 +16,10 @@
   "calculator": {
     "enabled": false,
     "trigger": "="
+  },
+  "dmsScreenshot": {
+    "enabled": true,
+    "stdout": true,
+    "mode": "interactive"
   }
 }

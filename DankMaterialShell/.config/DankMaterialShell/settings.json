@@ -237,7 +237,8 @@
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "spotlightSectionViewModes": {
-    "plugin_emojiLauncher": "list"
+    "plugin_emojiLauncher": "list",
+    "apps": "list"
   },
   "appDrawerSectionViewModes": {
     "apps": "list"
@@ -451,9 +452,14 @@
   "screenPreferences": {
     "wallpaper": [
       "all"
+    ],
+    "dock": [
+      "all"
     ]
   },
-  "showOnLastDisplay": {},
+  "showOnLastDisplay": {
+    "dock": true
+  },
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
@@ -473,15 +479,22 @@
       "showOnLastDisplay": true,
       "leftWidgets": [
         "launcherButton",
-        "workspaceSwitcher",
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        },
         {
           "id": "focusedWindow",
-          "enabled": true,
+          "enabled": false,
           "focusedWindowCompactMode": true
         }
       ],
       "centerWidgets": [
-        "music",
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 1
+        },
         "clock",
         "weather"
       ],
@@ -500,11 +513,14 @@
         },
         {
           "id": "memUsage",
-          "enabled": true
+          "enabled": true,
+          "minimumWidth": true,
+          "showSwap": false
         },
         {
           "id": "keyboard_layout_name",
-          "enabled": true
+          "enabled": true,
+          "keyboardLayoutNameCompactMode": true
         },
         {
           "id": "notificationButton",

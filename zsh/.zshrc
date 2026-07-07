@@ -33,6 +33,9 @@ setopt globdots
 # binds
 bindkey -v
 bindkey -v '^?' backward-delete-char
+bindkey '^Y' autosuggest-accept
+
+bindkey -s ^f "tmux-sessionizer\n"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -93,4 +96,8 @@ alias mux="tmuxinator"
 eval "$(uv generate-shell-completion zsh)"
 
 # opencode
-export PATH=/home/cnbldn/.opencode/bin:$PATH
+# export PATH=/home/cnbldn/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/cnbldn/.local/bin:$PATH"
