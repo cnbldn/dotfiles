@@ -13,6 +13,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export GOPATH=$HOME/.go
 export PATH="$PATH:$(go env GOPATH)/bin"
 
+export PATH="$PATH:/home/cnbldn/.dotnet/tools"
+
 # export GEM_HOME="$HOME/.gem"
 # export PATH="$PATH:$HOME/.gem/bin"
 
@@ -67,6 +69,8 @@ zinit light zsh-users/zsh-completions
 #     zsh-users/zsh-autosuggestions
 
 # completions
+fpath=(~/.zsh/completions $fpath)
+
 autoload -Uz compinit
 compinit
 
