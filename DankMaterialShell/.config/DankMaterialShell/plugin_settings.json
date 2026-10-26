@@ -2,7 +2,8 @@
   "emojiLauncher": {
     "enabled": true,
     "noTrigger": false,
-    "trigger": ":"
+    "trigger": ":",
+    "recentEmojis": ">"
   },
   "dankBatteryAlerts": {
     "enabled": true,
@@ -21,5 +22,25 @@
     "enabled": true,
     "stdout": true,
     "mode": "interactive"
+  },
+  "dankActions": {
+    "enabled": true,
+    "variants": [
+      {
+        "icon": "terminal",
+        "displayText": "",
+        "displayCommand": "/home/cnbldn/.config/DankMaterialShell/scripts/dms-gpclient-status.sh",
+        "clickCommand": "",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 3,
+        "showIcon": false,
+        "showText": true,
+        "visibilityCommand": "",
+        "visibilityInterval": 0,
+        "id": "variant_1789737993661",
+        "name": "vpn-status"
+      }
+    ]
   }
 }

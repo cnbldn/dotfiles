@@ -38,6 +38,7 @@ bindkey -v '^?' backward-delete-char
 bindkey '^Y' autosuggest-accept
 
 bindkey -s ^f "tmux-sessionizer\n"
+source <(fzf --zsh)
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -53,11 +54,21 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# auto suggestions stuff
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey '^[[A' up-line-or-beginning-search   # Arrow Up
+bindkey '^[[B' down-line-or-beginning-search # Arrow Down
+
 ### Plugins ###
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit ice blockf atpull'zinit creinstall -q .' # idk what this does
 zinit light zsh-users/zsh-completions
+
+zinit pack for fzf
 
 # turbo mode stuff
 # zinit wait lucid for \
@@ -98,6 +109,8 @@ function y() {
 # aliases
 alias mux="tmuxinator"
 eval "$(uv generate-shell-completion zsh)"
+
+alias lvim="NVIM_APPNAME=lazyvim nvim"
 
 # opencode
 # export PATH=/home/cnbldn/.opencode/bin:$PATH

@@ -1,0 +1,35 @@
+---@module 'lazy'
+---@type LazySpec
+return {
+  {
+    "stevearc/conform.nvim",
+    event = { "BufWritePre" },
+    cmd = { "ConformInfo" },
+    keys = {
+      {
+        "<leader>p",
+        ":Format<CR>",
+        mode = "",
+        desc = "Format Buffer",
+      },
+    },
+    ---@module 'conform'
+    ---@type conform.setupOpts
+    opts = {
+      notify_on_error = false,
+      default_format_opts = {
+        lsp_format = "fallback", -- Use external formatters if configured below, otherwise use LSP formatting. Set to `false` to disable LSP formatting entirely.
+      },
+      -- You can also specify external formatters in here.
+      formatters_by_ft = {
+        lua = { "stylua" },
+        -- rust = { 'rustfmt' },
+        -- Conform can also run multiple formatters sequentially
+        -- python = { "isort", "black" },
+        --
+        -- You can use 'stop_after_first' to run the first available formatter from the list
+        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+      },
+    },
+  },
+}

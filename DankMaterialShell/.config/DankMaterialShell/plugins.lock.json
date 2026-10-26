@@ -1,0 +1,18 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "dankActions": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankActions",
+      "commit": "bb90a1db7d540e64ae049c5906afba9b24baa865"
+    },
+    "displayMirror": {
+      "repo": "https://github.com/jfchenier/dms-display-mirror",
+      "commit": "92cd44c4fb67834bf71fdd78f83c29df5e0750b2"
+    },
+    "emojiLauncher": {
+      "repo": "https://github.com/devnullvoid/dms-emoji-launcher",
+      "commit": "8ff394e3ddfcb2fd755ed2e7b4c6f01f3e26e596"
+    }
+  }
+}
