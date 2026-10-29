@@ -1,5 +1,6 @@
 binds {
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
+    Mod+D hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+F9 hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
@@ -9,6 +10,5 @@ binds {
     XF86AudioRaiseVolume hotkey-overlay-title="Volume Up (10%)" { spawn "dms" "ipc" "call" "audio" "increment" "10"; }
     XF86MonBrightnessDown hotkey-overlay-title="Brightness Down (10%)" { spawn "dms" "ipc" "call" "brightness" "decrement" "10" ""; }
     XF86MonBrightnessUp hotkey-overlay-title="Brightness Up (10%)" { spawn "dms" "ipc" "call" "brightness" "increment" "10" ""; }
-    Mod+D { spawn "fuzzel"; }
     Mod+M repeat=false hotkey-overlay-title="Launch ZapZap" { spawn "flatpak" "run" "com.rtosta.zapzap"; }
 }

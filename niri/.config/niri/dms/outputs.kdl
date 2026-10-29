@@ -18,3 +18,9 @@ output "DP-2" {
     position x=3456 y=0
 }
 
+output "HDMI-A-1" {
+    mode "1024x768@60.004"
+    scale 1
+    position x=3456 y=0
+}
+
